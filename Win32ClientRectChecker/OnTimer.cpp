@@ -102,6 +102,6 @@ rectAdjustAfter.bottom
     gtxtOut = stdStringReplace(gtxtOut, L"\r", L"\n");
     gtxtOut = stdStringReplace(gtxtOut, L"\n", L"\r\n");
 
-    InvalidateRect(hWnd, nullptr, FALSE);
+    InvalidateRect(hWnd, nullptr, TRUE);
     UpdateWindow(hWnd);
 }
